@@ -5,9 +5,7 @@
 📖 프로젝트 개요 (Overview)
 
 Edge-IDS는 IoT 환경의 보안 취약점을 해결하기 위해 개발된 **경량화된 실시간 침입 탐지 시스템(Intrusion Detection System)**입니다.
-클라우드가 아닌 엣지 디바이스(Raspberry Pi) 자체에서 AI 모델을 구동하여, 네트워크 지연 없이 실시간으로 공격을 탐지하고 대응합니다.
-
-본 프로젝트는 KIAT 한미 첨단분야 교환학생 프로그램을 위한 연구 프로젝트의 일환으로 개발되었습니다.
+클라우드가 아닌 엣지 디바이스(Raspberry Pi) 자체에서 AI 모델을 구동하여, 네트워크 지연 없이 실시간으로 공격을 탐지합니다.
 
 🚀 주요 기능 (Key Features)
 
@@ -58,6 +56,8 @@ OS: Raspberry Pi OS (64-bit) / Windows (Training)
 
 Edge-IDS/
 ├── data/                  # 학습용 데이터셋 (CSV)
+|   ├── preprocess.py      # 데이터셋 전처리
+|   ├── gather_Dataset.py  # 데이터셋 취합
 │   ├── Botnet_Final_Data.csv
 │   ├── DDoS_Final_Data.csv
 │   └── PortScan_Final_Data.csv
