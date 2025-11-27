@@ -111,6 +111,3 @@ Role: Project Lead, AI Modeling, Embedded System Implementation
 
 Contact: cindy2005041297@gmail.com / ebin5780@gmail.com
 
-📜 라이선스 (License)
-
-This project is licensed under the MIT License - see the LICENSE file for details.
