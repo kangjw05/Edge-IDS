@@ -33,7 +33,7 @@ print(f"특징(Feature) 개수: {X.shape[1]}")
 # 훈련용(80%)과 테스트용(20%)으로 분리
 # stratify=y: 정답 비율을 유지하면서 나눔 (공격 데이터가 적을 때 필수)
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42, stratify=y
+    X, y, test_size=0.3, random_state=42, stratify=y
 )
 
 # 3. LightGBM 모델 학습
