@@ -77,6 +77,7 @@ Edge-IDS/
 ├── data/                  # 데이터셋 폴더
 │   ├── preprocess.py      # 데이터셋 전처리 스크립트
 │   ├── gather_Dataset.py  # 데이터셋 취합 스크립트
+│   ├── arp_data_gen.py        # ARP 데이터 생성기
 │   ├── Botnet_Final_Data.csv
 │   ├── DDoS_Final_Data.csv
 │   └── PortScan_Final_Data.csv
@@ -84,8 +85,7 @@ Edge-IDS/
 │   └── multi_attack_ids_model.joblib
 ├── scripts/               # 소스 코드
 │   ├── train_multi_model.py   # 모델 학습 스크립트 (PC용)
-│   ├── detect.py              # 실시간 탐지 스크립트 (Pi용)
-│   └── arp_data_gen.py        # ARP 데이터 생성기
+│   └── detect.py              # 실시간 탐지 스크립트 (Pi용)
 ├── requirements.txt       # 의존성 라이브러리 목록
 └── README.md              # 프로젝트 설명서
 ```
