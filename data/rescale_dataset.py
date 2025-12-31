@@ -4,7 +4,7 @@ import numpy as np
 # ==========================================
 # 설정
 # ==========================================
-INPUT_CSV = 'data/Temp_Training_Data.csv'
+INPUT_CSV = 'data/Final_Training_Data.csv'
 OUTPUT_CSV = 'data/Rescaled_Training_Data.csv'
 TARGET_WINDOW_MS = 2000  # 탐지기 윈도우 크기 (2초)
 TARGET_WINDOW_US = TARGET_WINDOW_MS * 1000 # 마이크로초 단위
