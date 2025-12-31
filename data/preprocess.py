@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-file_name = "/content/sample_data/Tuesday-WorkingHours.pcap_ISCX.csv"
+file_name = "data/Botnet_Final_Data.csv"
 
 # Raw File
 try:
@@ -18,9 +18,9 @@ df['Label'] = df['Label'].str.strip()
 df.replace([np.inf, -np.inf], np.nan, inplace=True)
 df.dropna(inplace=True)
 
-# 3. Label Encoding.
-# BENIGN(0), DDoS(1), PortScan(2), Botnet(5)
-df['Label_Encoded'] = df['Label'].apply(lambda x: 5 if x == 'SSH-Patator' or x == 'FTP-Patator' else 0)
+# 3. Label Encoding 직접 3으로 지정
+# SSH, FTP 침투 공격 및 Bot 라벨을 모두 우리 프로젝트의 봇넷 번호인 3으로 매핑합니다.
+df['Label_Encoded'] = df['Label'].apply(lambda x: 3 if x in ['SSH-Patator', 'FTP-Patator', 'Bot'] else 0)
 
 # 4. Core Features
 CORE_FEATURES = [
