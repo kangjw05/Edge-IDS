@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 
 # 설정
-DATA_FILE = "data/Final_Training_Data.csv"
+DATA_FILE = "data/Final_Normalized_Training_Data.csv"
 MODEL_DIR = "models"
 MODEL_FILE = os.path.join(MODEL_DIR, "multi_attack_ids_model.joblib")
 
